@@ -18,8 +18,8 @@ before_install:
   - docker build -t greendevops/react-test -f client/Dockerfile.dev ./client
 
 script:
-  - docker run greendevops/react-test -- --coverage
-# - docker run -e CI=true greendevops/react-test npm test
+#  - docker run greendevops/react-test -- --coverage
+ - docker run -e CI=true greendevops/react-test npm test
 
 deploy:
   provider: script
