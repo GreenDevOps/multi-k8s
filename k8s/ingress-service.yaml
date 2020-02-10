@@ -12,7 +12,7 @@ spec:
     - hosts:
       - k8s.greenchik.com
       - www.k8s.greenchik.com
-      SecretName: k8s-greenchik-com
+      secretName: k8s-greenchik-com
   rules:
     - host: k8s.greenchik.com 
       http:
